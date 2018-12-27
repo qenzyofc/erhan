@@ -1,0 +1,56 @@
+kullanıcı = "erhan"
+şifre = "erhan"
+
+a = input("Kullanıcı Adınız:")
+b = input("Şifreniz:")
+
+if (kullanıcı == a) and (şifre == b):
+    print("Giriş Başarılı")
+    while True:
+        hesap = input("Hesap Makinası İçin 1\nSoru Cevap İçin 2 Yazınız:")
+        if (hesap == "1"):
+            print("Hesap Makinası Açıldı")
+            hesap2 = input("Toplama İçin 1\nÇıkarma İçin 2\nÇarpma İçin 3\nBölme İçin 4 Yazınız:")
+            if(hesap2 == "1"):
+                print("Toplama Bölümü Açıldı")
+                sayı1 = int(input("Birinci Sayınızı Giriniz:"))
+                sayı2 = int(input("İkinci Sayınızı Giriniz:"))
+                print("Sonuç",int(sayı1)+int(sayı2))
+            elif(hesap2 == "2"):
+                print("Çıkarma Bölümü Açıldı")
+                sayı3 = int(input("Birinci Sayınızı Giriniz:"))
+                sayı4 = int(input("İkinci Sayınızı Giriniz:"))
+                print("Sonuç",int(sayı3)-int(sayı4))
+            elif(hesap2 == "3"):
+                print("Çarpma Bölümü Açıldı")
+                sayı5 = int(input("Birinci Sayınızı Giriniz:"))
+                sayı6 = int(input("İkinci Sayınızı Giriniz:"))
+                print("Sonuç",int(sayı5)*int(sayı6))
+            elif(hesap2 == "4"):
+                print("Bölme Bölümü Açıldı")
+                sayı7 = int(input("Birinci Sayınızı Giriniz:"))
+                sayı8 = int(input("İkinci Sayınızı Giriniz:"))
+                print("Sonuç",int(sayı7)/int(sayı8))
+            elif (hesap2 == "qweasdzxc"):
+                print("Gizli Bölme Açıldı\nHoş Geldiniz FELONY Bey\nŞuanlık Burası Bakımda...")
+            else:
+                print("Yanlış Tuşlama Yaptınız")
+        if (hesap == "2"):
+            print("Soru Cevap Bölümü Açıldı")
+            soru1 = input("İlk Sorunuz 5+5 Kaç Eder:")
+            if (soru1 == "10"):
+                print("Tebrikler Cevap:",soru1)
+                soru2 = input("2. Soru Atatürk'ün Doğum Yılı Kaçtır:")
+                if (soru2 == "1881"):
+                    print("Seni Gönülden Tebrik Ederim Cevap",soru2)
+                    soru3 = input("3. Soru ")
+                else:
+                    print("Bunu Bilmiyorsan Burda İşin Yok Kapı Orda")
+            else:
+                print("Yanlış Cevap Girdiniz")
+elif (kullanıcı != a) and (şifre == b):
+    print("Kullanıcı Adınız Hatalı")
+elif (kullanıcı == a) and (şifre != b):
+    print("Şifreniz Hatalı")
+else:
+    print("Geçersiz Bilgiler")
